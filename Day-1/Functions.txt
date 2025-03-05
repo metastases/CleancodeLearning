@@ -1,1 +1,50 @@
+Review 1:
+side effect is introduced
+remove sesion initialization.
+Get user and then call the function for the user
+
+Review 2:
+side effect is intoduced. 
+name is getting changed.
+
+Review 3:
+function name is not giving good redability.
+change it to IsDOMNodePresent() or remove ! from if statement
+Avoid negative conditions
+
+review 4:
+get proper constants for airplane type
+logic looks wrong, 
+if logic is diffrent create interface for airplane and classes for types of airplanes
+
+review 5:
+create a common function called "Drive" or "MoveToLocation"
+override this function for Bicycle and car implementation
+
+review 6:
+create 2 functoins, one for temp file creation and other for normal dile creation
+
+review 7:
+Avoid singletons as it cannot be mocked
+
+review 8:
+more than 3 parameter arguments, create a class
+
+review 9:
+get clients using service
+
+review 10:
+remove handle as it is not required
+
+review 11:
+wrong abstraction
+new function for validation is required
+new function to createcredential
+new function to create respons from credential
+
+review 12:
+remove Magic string
+
+review 13:
+remove dead code
 
