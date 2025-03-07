@@ -1,0 +1,41 @@
+public class PatientService
+{
+	private Patient patient;
+	private IDatabase database;
+	
+	public PatientService(IDatabase database)
+	{
+		this.database = database;
+	}
+	
+	public void PrintPatient()
+	{
+	   database.SaveQuery(patient);
+	}
+}
+
+Interface IDatabase
+{
+	public void SaveQuery(Patient patient);
+}
+
+public class SqlDb : IDatabase
+{
+	public void SaveQuery(Patient patient)
+	{
+	}
+}
+
+public class NoSqlDb : IDatabase
+{
+	public void SaveQuery(Patient patient)
+	{
+	}
+}
+
+public class SomeOtherDb : IDatabase
+{
+	public void SaveQuery(Patient patient)
+	{
+	}
+}
